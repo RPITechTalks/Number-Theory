@@ -1,0 +1,159 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+
+\usepackage{utopia} %font utopia imported
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[Number Theory for Computer Science] %optional
+{Number Theory for Computer Science}
+
+\author[Jerrett] % (optional)
+{Chris Jerrett\inst{1}}
+
+\institute[RPI] % (optional)
+{
+  \inst{1}%
+  Department of Computer Science
+  Rensselaer Polytechnic Institute
+}
+
+\date[RPI Tech Talks, 2020] % (optional)
+{RPI Tech Talks, September 2020}
+
+\logo{}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the 
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+  \begin{frame}
+    \frametitle{Table of Contents}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+%------------------------------------------------------------
+
+
+\begin{document}
+
+%The next statement creates the title page.
+\frame{\titlepage}
+
+
+%---------------------------------------------------------
+%This block of code is for the table of contents after
+%the title page
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\end{frame}
+%---------------------------------------------------------
+
+
+\section{Introduction}
+
+\subsection{What is Number Theory}
+
+\begin{frame}
+\frametitle{What is Number Theory}
+Number theory is the study of the natural numbers and the relationships between elements of the set of natural numbers. Integer value functions and the primes are of special importance to number theorists.
+\vspace{20pt}
+\pause
+\\There are multiple types of branches 
+\begin{itemize}
+ \item<2-> Elementary Number Theory
+ \item<3-> Analytic number theory
+ \item<4-> Algebraic number theory
+ \item<5-> Computational number theory
+\end{itemize}
+\pause
+\vspace{10pt}
+\begin{block}{}
+\begin{quote}
+"Mathematics is the queen of the sciences—and number theory is the queen of mathematics."
+\\-Johann Carl Friedrich Gauss
+\end{quote}
+\end{block}
+\end{frame}
+
+\subsection{Why do Computer Scientist Care about Number Theory}
+\begin{frame}
+\frametitle{Why do Computer Scientist Care about Number Theory}
+\begin{itemize}
+ \item<2-> Cryptography
+ \item<3-> Error Correction
+ \item<4-> Random Number Generation
+ \item<5-> Fast Arithmetic
+ \item<6-> Numerical Representations
+ \item<7-> Tons more
+\end{itemize}
+\pause
+\begin{block}{}
+\begin{quote}
+Pure mathematics is on the whole distinctly more useful than applied.... For what is useful above all is technique, and mathematical technique is taught mainly through pure mathematics.
+\\-G.H. Hardy
+\end{quote}
+\end{block}
+\end{frame}
+
+%---------------------------------------------------------
+%Highlighting text
+\begin{frame}
+\frametitle{Sample frame title}
+
+In this slide, some important text will be
+\alert{highlighted} because it's important.
+Please, don't abuse it.
+
+\begin{block}{Remark}
+Sample text
+\end{block}
+
+\begin{alertblock}{Important theorem}
+Sample text in red box
+\end{alertblock}
+
+\begin{examples}
+Sample text in green box. The title of the block is ``Examples".
+\end{examples}
+\end{frame}
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+%Two columns
+\begin{frame}
+\frametitle{Two-column slide}
+
+\begin{columns}
+
+\column{0.5\textwidth}
+This is a text in first column.
+$$E=mc^2$$
+\begin{itemize}
+\item First item
+\item Second item
+\end{itemize}
+
+\column{0.5\textwidth}
+This text will be in the second column
+and on a second tought this is a nice looking
+layout in some cases.
+\end{columns}
+\end{frame}
+%---------------------------------------------------------
+
+
+\end{document}
